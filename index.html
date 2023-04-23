@@ -1,0 +1,138 @@
+</html>
+<lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>FireDeck - Threndol Tutoring Edition</title>
+  <link href="https://bootswatch.com/5/quartz/bootstrap.min.css" rel="stylesheet">
+  <!--<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400italic,100,700italic,300,700,400' rel='stylesheet' type='text/css'>
+  -->
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="./index.css" rel="stylesheet" />
+
+<script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-firestore.js"></script>
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Bootstrap CSS -->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap JS -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font/5.15.3/css/all.min.css">
+
+<!-- Bootswatch Theme -->
+<link rel="stylesheet" href="https://bootswatch.com/5/quartz/bootstrap.min.css">
+
+
+
+<!-- Quill CSS -->
+<link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+
+<!-- Quill JS -->
+<script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+
+</head>
+
+<button id="teacher">Teacher</button>
+<button id="student">Student</button>
+<div id="firebaseui-auth-container"></div>
+<div id="loader">Loading...</div>
+
+
+
+<body>
+  <div class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand logo" id="logoLink" href="/#">Fire Deck.</a>
+      </div>
+      <div class="navbar-form navbar-right">
+        <a href="https://github.com/phanegan3/FireDeck" target="_blank" class="btn btn-info">&nbsp;<i class="fa fa-github"></i>&nbsp;</a>
+        <button id="teacher">Teacher</button>
+        <button id="student">Student</button>
+        <div id="firebaseui-auth-container"></div>
+        <div id="loader">Loading...</div>
+        <span id="sLBtn" class="btn btn-success">Student Login</span>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid" id="main">
+    <div class="page-header">
+      <h1>
+        <span class="logo">Fire Deck.</span>
+        <small>The free, open-source alternative to Pear Deck.</small>
+      </h1>
+    </div>
+    <p>
+      Create presentations with interactivity; these can be accessed using iPads, Chromebooks, and almost any other device using the modern web. To create a presentation, click the Teacher Login button and sign in using Google; to view a pre-made Fire Deck,
+      click on the student button.
+    </p>
+  </div>
+<!-- Firebase Configuration -->
+<script>
+  // Your Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBs29fQO9jHeFgf5dQZzKd8Ti9BQ6d6SPU",
+    authDomain: "firedeck-970ae.firebaseapp.com",
+    databaseURL: "https://firedeck-970ae-default-rtdb.europe-west1.firebasedatabase.app",
+    projectId: "firedeck-970ae",
+    storageBucket: "firedeck-970ae.appspot.com",
+    messagingSenderId: "209911650745",
+    appId: "1:209911650745:web:dc5fe88e289442eb0e3e68"
+  };
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+<script src="https://www.gstatic.com/firebasejs/9.6.9-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.9/firebase-database.js"></script>
+</script>
+
+</body>
+
+<script>
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.9/firebase-app.js";
+  import { getDatabase, ref } from "https://www.gstatic.com/firebasejs/9.6.9/firebase-database.js";
+
+  // Your Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyBs29fQO9jHeFgf5dQZzKd8Ti9BQ6dSPU",
+    authDomain: "firedeck-970ae.firebaseapp.com",
+    databaseURL: "https://firedeck-970ae-default-rtdb.europe-west1.firebasedatabase.app",
+    projectId: "firedeck-970ae",
+    storageBucket: "firedeck-970ae.appspot.com",
+    messagingSenderId: "209911650745",
+    appId: "1:209911650745:web:dc5fe88e289442eb0e3e68"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+
+  // Get a reference to the Realtime Database
+  const db = getDatabase(app);
+  const fb = ref(db);
+</script>
+</script>
+<!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/9.6.9/firebase-app.js"></script>
+
+<!-- Add Firebase products that you want to use -->
+<script src="https://www.gstatic.com/firebasejs/9.6.9/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.9/firebase-firestore.js"></script>
+
+<!-- Add the FirebaseUI component -->
+<script src="https://cdn.firebase.com/libs/firebaseui/4.7.1/firebaseui.js"></script>
+<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/4.7.1/firebaseui.css" />
+
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script src="uiQuirks.js"></script>
+<script src="./index.js"></script>
+
+</html>
